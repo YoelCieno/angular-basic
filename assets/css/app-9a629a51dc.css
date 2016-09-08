@@ -7113,7 +7113,8 @@ iframe.heightSet {
 }
 
 #logo {
-  width: 90%;
+  width: 60%;
+  padding: 10% 10% 5%;
 }
 
 @media (min-width:900px) {
@@ -7271,4 +7272,4 @@ section.jumbotron.about {
   background-color: transparent!important;
 }
 
-/*# sourceMappingURL=../../maps/assets/css/app-68937192c7.css.map */
+/*# sourceMappingURL=../../maps/assets/css/app-9a629a51dc.css.map */
