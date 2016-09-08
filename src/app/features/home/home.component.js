@@ -24,7 +24,7 @@
         creationDate: creation.getDate(),
         contentType: 'techs',
         contentData: getTechs(),
-        logoURL: 'assets/images/angular-basic-git.png'
+        logoURL: 'assets/images/Front-Stack-Angular-Big.png'
       };
       
       /**
