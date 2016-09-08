@@ -1,4 +1,4 @@
-![angular basic](docs/angular-basic-git.png)
+![angular basic](docs/Front-Stack-Angular-Big.png)
 
 # Angular Basic v1.2
 
