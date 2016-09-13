@@ -15,7 +15,7 @@ gulp.task('build', gulp.series('eslint-failonerror','appconfig', 'partials', 'in
 gulp.task('test', gulp.series('eslint', 'karma:single-run'));
 gulp.task('test:auto', gulp.series('watch', 'karma:auto-run'));
 gulp.task('protractor:src', gulp.series('browsersync:e2e', 'webdriver-update', 'run-protractor'));
-gulp.task('protractor:dist', gulp.series('browsersync:e2e-dist', 'webdriver-update', 'run-protractor'));
+gulp.task('protractor:dist', gulp.series('build','browsersync:e2e-dist', 'webdriver-update', 'run-protractor'));
 gulp.task('protractor', gulp.series('protractor:src'));
 gulp.task('serve', gulp.series('appconfig', 'inject', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));

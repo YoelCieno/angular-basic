@@ -9,8 +9,8 @@ describe('The main view', function () {
   });
 
   it('should include jumbotron with correct data', function() {
-    expect(page.pEl.getText()).toBe('SUITE');
-    expect(page.imgEl.getAttribute('src')).toMatch(/assets\/images\/serenity\/serenity.png$/);
+    expect(page.pEl.getText()).toBe('Frontend Revolution based on opensource');
+    expect(page.imgEl.getAttribute('src')).toMatch(/assets\/images\/Front-Stack-Angular-Big.png$/);
     //expect(page.imgEl.getAttribute('alt')).toBe('I\'m Yeoman');
   });
 

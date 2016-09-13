@@ -4,6 +4,7 @@ const spa = require('browser-sync-spa');
 
 const browserSyncConf = require('../conf/browsersync.conf');
 const browserSyncDistConf = require('../conf/browsersync-dist.conf');
+const browserSyncE2EConf = require('../conf/browsersync-protractor.conf');
 const browserSyncApiDocConf = require('../conf/browsersync-apidoc.conf');
 
 browserSync.use(spa());
@@ -15,7 +16,7 @@ gulp.task('browsersync:e2e', browserSyncE2e);
 gulp.task('browsersync:e2e-dist', browserSyncE2eDist)
 
 function browserSyncE2e(done) {
-  browserSync.init(browserSyncConf());
+  browserSync.init(browserSyncE2EConf());
   done();
 }
 
