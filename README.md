@@ -17,7 +17,6 @@ Before we can start to develop an angular application, we need to prepare the sy
  * Install [Python 2.7.X.msi](https://www.python.org/downloads/)
  * Install [NodeJS]( https://nodejs.org/en/) and [NPM](https://www.npmjs.com/), which is the Node package manager for server-side components.
  * Install [Bower](https://bower.io/), which is the client-side package manager.
- * Install the testing frameworks, which are [Karma](https://karma-runner.github.io/1.0/index.html) and [Protractor](http://www.protractortest.org/#/).
  * Install gulp-cli globally with: `npm install --global gulp-cli`
 
 The next prerequisites depends of your user privileges defined as follow:
@@ -47,7 +46,7 @@ In case of having a corporative Proxy in the local network, the environment need
 4. HTML5
     * [Test your browser](https://html5test.com/)
 
-# Getting Starter 
+# Getting Started
 
 ## Installing
 
@@ -225,7 +224,7 @@ In the `conf/app.config.json` file can be defined different Angular specificatio
 * [Todd Motto Angular Styleguide](https://github.com/toddmotto/angular-styleguide#comment-standards) 
 * [Angular style guide](https://github.com/mgechev/angularjs-style-guide) 
 * [Generator Angular](https://github.com/yeoman/generator-angular)
-* [Generator Gulp Angular](https://github.com/Swiip/generator-gulp-angular)
+* [Generator Gulp Angular](https://github.com/FountainJS/generator-fountain-webapp)
 * [Angular Official Website](https://angularjs.org/)
 
 ## Acknowledgments
