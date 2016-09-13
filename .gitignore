@@ -6,3 +6,4 @@ test-reports/
 .tmp/
 dist/
 docs/api/
+npm-debug.log
