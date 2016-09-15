@@ -12,7 +12,7 @@
       .service('guideItems', guideItems);
 
   /** @ngInject */
-  function guideItems() {
+  function guideItems(toastr) {
     var data = [
       {
         'avatarSrc': 'assets/images/guideItems/todd-avatar.jpg',
@@ -88,6 +88,7 @@
      * @returns {object} guide items
      */
     function getItems() {
+      toastr.info('Guide Items Loaded','Info');
       return data;
     }
   }

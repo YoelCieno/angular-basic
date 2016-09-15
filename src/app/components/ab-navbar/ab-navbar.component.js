@@ -16,7 +16,9 @@
       controller: NavbarController,
       controllerAs: 'vm',
       bindings: {
-          creationDate: '<'
+          creationDate: '<',
+          brand: '<',
+          paths: '<'
       }
     });
 

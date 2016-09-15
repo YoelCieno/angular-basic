@@ -16,30 +16,18 @@
     });
 
     /** @ngInject */
-    function AboutController(guideItems, toastr, creation) {
+    function AboutController(navbarPaths, guideItems, toastr, creation) {
       var vm = this;
       vm.pageData = {
         section: 'about',
         sectionText: 'About Section',
         creationDate: creation.getDate(),
         contentType: 'guide-item',
-        contentData: getGuides(),
-        logoURL: 'assets/images/serenity/serenity.png'
+        contentData: guideItems.getItems(),
+        logoURL: 'assets/images/serenity/serenity.png',
+        brand: 'Angular Basic',
+        paths: navbarPaths.getPaths()
       };
-      
-      /**
-       * @ngdoc function
-       * @name app.component#getGuides
-       * @methodOf  app.component:about
-       * @requires guideItem
-       * @description
-       * Get guides using service guideItems
-       * @returns {object} guideItems
-       */
-      function getGuides() {
-        toastr.info('Guide Items Loaded','Info');
-        return guideItems.getItems();
-      }
     }
   
 })();

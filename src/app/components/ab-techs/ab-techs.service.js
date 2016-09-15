@@ -12,7 +12,7 @@
       .service('techs', techs);
 
   /** @ngInject */
-  function techs() {
+  function techs(toastr) {
     var data = [
       {
         'title': 'Gulp 4',
@@ -82,6 +82,14 @@
      * @returns {object} techs 
      */
     function getTechs() {
+      var rankCount = 0;
+        
+      angular.forEach(data, function(awesomeThing) {
+        awesomeThing.rank = rankCount;
+        rankCount = rankCount++;
+      });
+
+      toastr.info('Techs Loaded','Info');
       return data;
     }
   }
