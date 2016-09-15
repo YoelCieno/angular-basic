@@ -17,55 +17,55 @@
       {
         'title': 'Gulp 4',
         'description': 'Automates tasks to improve your performance.',
-        'logo': 'gulp.png',
+        'logo': 'techs/gulp.png',
         'url': 'http://gulpjs.com/'
       },
       {
         'title': 'Angular',
         'description': 'The front-end framework that you need.',
-        'logo': 'angular.png',
+        'logo': 'techs/angular.png',
         'url': 'https://angularjs.org/'
       },
       {
         'title': 'Bower',
         'description': 'A package manager for the web.',
-        'logo': 'bower.png',
+        'logo': 'techs/bower.png',
         'url': 'https://bower.io/'
       },
       {
         'title': 'Material Design',
         'description': 'Makes more liberal use of grid-based layouts, responsive animations and transitions...etc',
-        'logo': 'material-design.png',
+        'logo': 'techs/material-design.png',
         'url': 'https://material.angularjs.org/latest/'
       },
       {
         'title': 'Browsersync',
         'description': 'Faster tweaking and testing by synchronizing file changes and interactions across multiple devices.',
-        'logo': 'browser-sync.png',
+        'logo': 'techs/browser-sync.png',
         'url' : 'https://www.browsersync.io/'
       },
       {
         'title': 'Documentation',
         'description': 'Builds your documentation using ng-doc and serves it directly on your browser.',
-        'logo': 'angular-doc.png',
+        'logo': 'techs/angular-doc.png',
         'url': 'https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation'
       },
       {
         'title': 'Karma',
         'description': 'The main goal for Karma is to bring a productive testing environment to developers.',
-        'logo': 'karma.png',
+        'logo': 'techs/karma.png',
         'url': 'https://karma-runner.github.io/1.0/index.html'
       },
       {
         'title': 'Jasmine',
         'description': 'Behaviour-driven development framework for testing JavaScript code.',
-        'logo': 'jasmine.png',
+        'logo': 'techs/jasmine.png',
         'url': 'http://jasmine.github.io/'
       },
       {
         'title': 'Protractor',
         'description': 'End to end testing for AngularJS applications.',
-        'logo': 'protractor.png',
+        'logo': 'techs/protractor.png',
         'url': 'http://www.protractortest.org/#/'
       }
      
