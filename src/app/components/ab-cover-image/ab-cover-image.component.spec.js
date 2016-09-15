@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  describe('navbar component', function() {
+  describe('abCoverImage component', function() {
 
     var $componentController;
 
@@ -12,10 +12,10 @@
 
     it('should have a date defined', function() {
       // Here we are passing actual bindings to the component
-      var vm = $componentController('coverImage', null, {section: 'home'});
+      var vm = $componentController('abCoverImage', null, {section: 'home'});
       expect(vm.section).toEqual(jasmine.any(String));
       expect(vm.section).toEqual('home');
-      vm = $componentController('coverImage', null, {section: 'about'});
+      vm = $componentController('abCoverImage', null, {section: 'about'});
       expect(vm.section).toEqual(jasmine.any(String));
       expect(vm.section).toEqual('about');
     });

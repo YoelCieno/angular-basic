@@ -21,7 +21,7 @@
 
         it('should have data from the service ', function() {
             // Here we are passing actual bindings to the component
-            var vm = $componentController('techs', null, bindings);
+            var vm = $componentController('abTechs', null, bindings);
             //Check if the binding is working
             expect(vm.item.url).toBe(item.url);
         });

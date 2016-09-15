@@ -15,8 +15,8 @@
      */
   angular
     .module('app')
-    .component('coverImage', {
-      templateUrl: 'app/components/coverImage/coverImage.html',
+    .component('abCoverImage', {
+      templateUrl: 'app/components/ab-cover-image/ab-cover-image.html',
       controller: CoverImageController,
       controllerAs: 'vm',
       bindings:{

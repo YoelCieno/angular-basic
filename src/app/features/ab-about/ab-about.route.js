@@ -9,7 +9,7 @@
     $stateProvider
       .state('about', {
         url: '/about',
-        template: '<about></about>'
+        template: '<ab-about></ab-about>'
       });
   }
 

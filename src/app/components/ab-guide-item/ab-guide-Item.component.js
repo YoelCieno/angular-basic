@@ -11,8 +11,8 @@
      */
   angular
     .module('app')
-    .component('guideItem', {
-      templateUrl: 'app/components/guideItem/guideItem.html',
+    .component('abGuideItem', {
+      templateUrl: 'app/components/ab-guide-item/ab-guide-item.html',
       controller: GuideItemController,
       controllerAs: 'vm',
       bindings:{

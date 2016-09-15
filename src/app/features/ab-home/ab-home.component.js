@@ -9,8 +9,8 @@
      */
   angular
     .module('app')
-    .component('home', {
-      templateUrl: 'app/features/home/home.html',
+    .component('abHome', {
+      templateUrl: 'app/features/ab-home/ab-home.html',
       controller: HomeController,
       controllerAs: 'vm'
     });

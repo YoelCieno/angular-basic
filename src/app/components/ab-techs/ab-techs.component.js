@@ -11,8 +11,8 @@
      */
   angular
     .module('app')
-    .component('techs', {
-      templateUrl: 'app/components/techs/techs.html',
+    .component('abTechs', {
+      templateUrl: 'app/components/ab-techs/ab-techs.html',
       controllerAs: 'vm',
       bindings:{
         item: '<'

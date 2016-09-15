@@ -9,8 +9,8 @@
      */
   angular
     .module('app')
-    .component('about', {
-      templateUrl: 'app/features/about/about.html',
+    .component('abAbout', {
+      templateUrl: 'app/features/ab-about/ab-about.html',
       controller: AboutController,
       controllerAs: 'vm'
     });

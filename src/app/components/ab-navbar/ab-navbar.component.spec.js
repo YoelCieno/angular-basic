@@ -18,7 +18,7 @@
 
     it('should have a date defined', function() {
       // Here we are passing actual bindings to the component
-      var vm = $componentController('acmeNavbar', null, bindings);
+      var vm = $componentController('abNavbar', null, bindings);
       expect(vm.creationDate).toEqual(jasmine.any(Number));
       expect(vm.creationDate).toEqual(timeInMs);
       expect(vm.relativeDate).toEqual(jasmine.any(String));

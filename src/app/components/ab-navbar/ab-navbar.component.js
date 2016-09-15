@@ -11,8 +11,8 @@
      */
   angular
     .module('app')
-    .component('acmeNavbar', {
-      templateUrl: 'app/components/navbar/navbar.html',
+    .component('abNavbar', {
+      templateUrl: 'app/components/ab-navbar/ab-navbar.html',
       controller: NavbarController,
       controllerAs: 'vm',
       bindings: {

@@ -1,20 +1,21 @@
 (function() {
   'use strict';
 
-  describe('home component', function() {
+  describe('about component', function() {
 
     var $componentController;
-
+    
     beforeEach(module('app'));
     beforeEach(inject(function(_$componentController_ ) {
         $componentController = _$componentController_;
     }));
 
     it('should have a specific sectionTest', function() {
-      var vm = $componentController('home', null, null);
-      expect(vm.pageData.sectionText).toEqual("Frontend Revolution based on opensource");
+      var vm = $componentController('abAbout', null, null);
+      expect(vm.pageData.sectionText).toEqual("About Section");
     });
-    
+
   });
 })();
+
 

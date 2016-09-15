@@ -9,7 +9,7 @@
     $stateProvider
         .state('home', {
           url: '/home',
-          template: '<home></home>'
+          template: '<ab-home></ab-home>'
         });              
   }
 
