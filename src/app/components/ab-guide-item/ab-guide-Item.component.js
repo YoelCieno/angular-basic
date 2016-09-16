@@ -2,7 +2,7 @@
   'use strict';
   /**
      * @ngdoc component
-     * @name app.component:guideItem
+     * @name app.component:abGuideItem
      *
      * @description
      * This component shows cards using the item binding for his own building.
@@ -28,7 +28,7 @@
       /**
        * @ngdoc function
        * @name app.component#setItemLike
-       * @methodOf  app.component:guideItem
+       * @methodOf  app.component:abGuideItem
        * @description
        * Set and unset an item like.
        *

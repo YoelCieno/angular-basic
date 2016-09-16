@@ -2,7 +2,7 @@
   'use strict';
   /**
      * @ngdoc component
-     * @name app.component:home
+     * @name app.component:abHome
      *
      * @description
      * Feature home. Load all necesary data for his childs components

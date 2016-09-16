@@ -3,7 +3,7 @@
 
   /**
      * @ngdoc component
-     * @name app.component:coverImage
+     * @name app.component:abCoverImage
      *
      * @description
      * A description of the component

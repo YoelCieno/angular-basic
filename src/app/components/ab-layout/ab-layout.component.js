@@ -2,7 +2,7 @@
   'use strict';
   /**
      * @ngdoc component
-     * @name app.component:layout
+     * @name app.component:abLayout
      *
      * @description
      * Give us a basic template for our features home and about 

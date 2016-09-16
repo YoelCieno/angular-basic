@@ -2,7 +2,7 @@
   'use strict';
   /**
      * @ngdoc component
-     * @name app.component:techs
+     * @name app.component:abTechs
      *
      * @description
      * Shows cards with the technologies.

@@ -2,7 +2,7 @@
   'use strict';
   /**
      * @ngdoc component
-     * @name app.component:acmeNavbar
+     * @name app.component:abNavbar
      *
      * @description
      * Shows a common navbar.

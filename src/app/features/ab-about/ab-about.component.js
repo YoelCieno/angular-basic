@@ -2,7 +2,7 @@
   'use strict';
   /**
      * @ngdoc component
-     * @name app.component:about
+     * @name app.component:abAbout
      *
      * @description
      * Feature about. Load all necesary data for his childs components
