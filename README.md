@@ -14,8 +14,7 @@ Changelog can be found at <a href="CHANGELOG.md" target="_blank">Link</a>
 # Prerequisites
 
 Before we can start to develop an angular application, we need to prepare the system and install some tools that facilitate and automate the development process:
- * Install [Python 2.7.X.msi](https://www.python.org/downloads/)
- * Install [NodeJS]( https://nodejs.org/en/) and [NPM](https://www.npmjs.com/), which is the Node package manager for server-side components.
+ * Install [NodeJS]( https://nodejs.org/en/) (ensure check npm package in the installation process), which is the Node package manager for server-side components.
  * Install [Bower](https://bower.io/), which is the client-side package manager.
  * Install gulp-cli globally with: `npm install --global gulp-cli`
 

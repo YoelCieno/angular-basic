@@ -7,6 +7,20 @@
 
 # Prerequisite Installation process
 
+Optional steps: 
+ * Install [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (this step is optional. Is used in e2e testing with Protractor)
+ * Install [Python 2.7.X.msi](https://www.python.org/downloads/) (This step is optional. Some packages need to be compiled when the npm install is running. If python isn't installed it can cause some Error traces on our installation. In most cases, npm can continue with the installation)
+ > If you are working on windows, download and install this .msi [Python 2.7.X.msi](https://www.python.org/downloads/). 
+ If you are working on a Unix system, ensure you are super user and follow the next steps:
+ ```
+ wget http://www.python.org/ftp/python/2.7/Python-2.7.tgz
+tar xzf Python-2.7.tgz
+cd Python-2.7
+./configure --with-pth --with-dec-threads --with-signal-module --prefix=/opt/python-2.7
+make
+sudo make install
+ ```
+
 ## With Admin privileges
 
 ### NodeJS & NPM
@@ -14,20 +28,16 @@
 Download NodeJS JavaScript runtime from the [NodeJS portal](https://nodejs.org/en/) and install with admin priviledges.
 
 There are two versión avaliable versión LTS (Long Time Support) and Current versión with the latest features.   
-
-Add NodeJS and NPM to the PATH Enviroment variable
-```
-set PATH=%PATH%;C:\Program Files\nodejs
-```
+Download LTS version.
 
 If every works as expected, NodeJS & NPM should be operational.
 To check its correct operation, could be tested with the following commands:
 ```
 node -v
-v5.10.1
+vx.x.x
 
 npm -v
-3.8.6
+x.x.x
 ```
 
 ### Bower
@@ -36,56 +46,6 @@ Once NPM is operative, Bower can be downloaded and installed globally as follow:
 ```
 npm install -g bower
 ```
-From this point, all application Bower dependencies defined in **Bower.json** file could be install with:
-```
-bower install
-```
-
-### Karma  
-
-The recommended approach is to install Karma (and all the plugins your project needs) locally in the project's directory.
-
-> Note: Karma currently works on Node.js 0.10, 0.12.x, 4.x, 5.x, and 6.x. See [FAQ](https://karma-runner.github.io/1.0/intro/faq.html) for more info.
-
-```
-# Install Karma:
-npm install karma --save-dev
-
-# Install plugins that your project needs:
-npm install karma-jasmine karma-chrome-launcher --save-dev
-```
-This will install karma, karma-jasmine and karma-chrome-launcher packages into node_modules in your current working directory and also save these as devDependencies in package.json, so that any other developer working on the project will only have to do npm install in order to get all these dependencies installed.
-```
-# Run Karma:
-./node_modules/karma/bin/karma start
-```
-You might find it useful to install karma-cli globally. You will need to do this if you want to run Karma on Windows from the command line.
-```
-$ npm install -g karma-cli
-```
-Then, you can run Karma simply by karma from anywhere and it will always run the local version.
-
-See [the oficial Karma manual](https://karma-runner.github.io/1.0/intro/installation.html) for more info.
-
-### Protractor
-
-Use npm to install Protractor globally with:
-```
-npm install -g protractor
-```
-This will install two command line tools, protractor and webdriver-manager. Try running protractor --version to make sure it's working.
-
-The webdriver-manager is a helper tool to easily get an instance of a Selenium Server running. Use it to download the necessary binaries with:
-```
-webdriver-manager update
-```
-Now start up a server with:
-```
-webdriver-manager start
-```
-This will start up a Selenium Server and will output a bunch of info logs. Your Protractor test will send requests to this server to control a local browser. You can see information about the status of the server at http://localhost:4444/wd/hub.
-
-See [the oficial Protractor manual](http://www.protractortest.org/#/) for more info.
 
 ## Without Admin privileges
 
