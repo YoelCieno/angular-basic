@@ -13,9 +13,8 @@ Please note we have a code of conduct, please follow it in all your interactions
    variables, exposed ports, useful file locations and container parameters.
 3. Increase the version numbers in any examples files and the README.md and CHANGELOG.md to the new version that this
    Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
-   do not have permission to do that, you may request the second reviewer to merge it for you.
-
+4. The commiters groups will analyze your pull request and they will validate your contribution.  If you want to know how to contribute, follow this [github tutorial](https://help.github.com/articles/creating-a-pull-request/) 
+5. Make sure your fork is up to date before apply for a pull request, [check out this link](https://help.github.com/articles/syncing-a-fork/)
 ## Contributor Code of Conduct
 
 As contributors and maintainers of this project, and in the interest of fostering an open and 
