@@ -14,7 +14,7 @@ function karmaSingleRun(done) { runTests(true,done); }
 function karmaAutoRun(done) { runTests(false,done); }
 
 function karmaFinishHandler(done) {
-  return failCount => {  done(failCount ? new Error('Failed ' + failCount + ' tests.') : null); };
+  return failCount => {  done(failCount ? new Error('Karma ends unsuccessfully.') : null); };
 }
 
 function runTests (singleRun,done) {

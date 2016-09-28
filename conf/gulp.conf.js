@@ -26,24 +26,6 @@ exports.paths = {
   tasks: 'gulp'
 };
 
-/**
- *  The Coverage threshold of your project
- */
-exports.coverage_threshold = {
-  dev: {
-    'statements': 80,
-    'branches': 80,
-    'functions': 80,
-    'lines': 80 
-  },
-  pro: {
-    'statements': 100,
-    'branches': 100,
-    'functions': 100,
-    'lines': 100
-  }
-};
-
 exports.titleApiDoc = 'angular-basic';
 
 exports.path = {};

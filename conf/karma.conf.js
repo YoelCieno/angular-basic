@@ -10,6 +10,11 @@ var pathSrcHtml = [
   path.join(conf.paths.src, '/**/*.html')
 ];
 
+var fs = require('fs');
+var appconfig = JSON.parse(fs.readFileSync('./conf/app.config.json'));
+var environment = (argv.dev) ? 'dev' : 'pro';
+var threshold = appconfig.coverage_threshold[environment];
+
 function listFiles() {
   var wiredepOptions = _.extend({}, conf.wiredep, {
     dependencies: true,
@@ -41,16 +46,12 @@ function listFiles() {
 
 module.exports = function(config) {
 
-  var environment = (argv.dev) ? 'dev' : 'pro';
-  var threshold = conf.coverage_threshold[environment];
-
   var configuration = {
     files: listFiles(),
     basePath: '../',
     singleRun: true,
-
-    autoWatch: false,
-    
+    failOnEmptyTestSuite: false,
+    autoWatch: false,    
     ngHtml2JsPreprocessor: {
       stripPrefix: conf.paths.src + '/',
       moduleName: 'app'

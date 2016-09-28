@@ -17,7 +17,7 @@ function appConfig() {
 
   return gulp.src('conf/app.config.json')
     .pipe(gulpNgConfig(conf.ngModule, {
-      environment : 'env.'+ environment,
+      environment : 'environment_constants.'+ environment,
       wrap : true,
       createModule: false
     }))
