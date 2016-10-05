@@ -1,4 +1,6 @@
-![angular basic](docs/FrontStack_AngularBasic_528px.png)
+<p align="center">
+<img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/FrontStack_AngularBasic_528px.png"/>
+</p>
 
 # Angular Basic v1.2
 
