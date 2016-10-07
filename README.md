@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/FrontStack_AngularBasic_528px.png"/>
 </p>
 
-# Angular Basic v1.2
+# Angular Basic v1.2.3
 
 > Provides fast, reliable and extensible starter for the development of Angular 1.X projects.
 
@@ -188,7 +188,9 @@ gulp serve:dist --pro
 gulp build --dev
 gulp build --pro
 ```
-In the `conf/app.config.json` file can be defined different Angular specification by environment such us backend, analytics or track-trace endpoints. At build and render time this file will be transform in an Angular module `src/app/app.config.json` defining the list of constant defined in the file. At the same time `conf/gulp.conf.json` contains the coverage definition by environment among other setups.
+In `conf/app.config.json`, can be define the following parameters by environment: 
+ * **environment_constants**: Parameters that be transform in an Angular module **src/app/app.environment.js** defining the list of constant available to Angular.
+ * **coverage_threshold**: Minimum coverage limit necessary to perform a build.    
 
 ## Full list of Gulp tasks
 
