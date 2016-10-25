@@ -9,10 +9,10 @@ const conf = require('../conf/gulp.conf');
 gulp.task('styles', styles);
 
 function styles() {
-  return gulp.src(conf.path.src('**/*.css'))
+  return gulp.src(conf.paths.src+'/**/*.css')
     .pipe(sourcemaps.init())
     .pipe(postcss([autoprefixer()])).on('error', conf.errorHandler('Autoprefixer'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(conf.path.tmp()))
+    .pipe(gulp.dest(conf.paths.tmp))
     .pipe(browserSync.stream());
 }

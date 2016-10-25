@@ -22,5 +22,5 @@ function appConfig() {
       createModule: false
     }))
     .pipe(rename("app.environment.js"))
-    .pipe(gulp.dest( path.join(conf.paths.src,'/app') ));
+    .pipe(gulp.dest(conf.paths.src+'/app'));
 }

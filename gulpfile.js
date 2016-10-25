@@ -5,7 +5,7 @@ const browserSync = require('browser-sync');
 const conf = require('./conf/gulp.conf');
 
 // Load some files into the registry
-const hub = new HubRegistry([conf.path.tasks('*.js')]);
+const hub = new HubRegistry([conf.paths.tasks+'/*.js']);
 
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
@@ -30,14 +30,14 @@ function reloadBrowserSync(cb) {
 
 function watch(done) {
   gulp.watch([
-    conf.path.src('index.html'),
+    conf.paths.src+'index.html',
     'bower.json'
   ], gulp.parallel('inject'));
 
-  gulp.watch(conf.path.src('app/**/*.html'), reloadBrowserSync);
+  gulp.watch(conf.paths.src+'/app/**/*.html', reloadBrowserSync);
   gulp.watch([
-    conf.path.src('**/*.css')
+    conf.paths.src+'/**/*.css'
   ], gulp.series('styles'));
-  gulp.watch(conf.path.src('**/*.js'), gulp.series('inject'));
+  gulp.watch(conf.paths.src+'/**/*.js', gulp.series('inject'));
   done();
 }

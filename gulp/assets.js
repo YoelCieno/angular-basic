@@ -12,21 +12,21 @@ gulp.task('assets', gulp.series('component-assets-images','component-assets-font
 
 // Merge all images of component assets folder inside the dist assets images folder.
 function component_assets_images(){
-     return gulp.src(path.join(conf.paths.src, '/app/**/assets/**/*.{jpg,JPG,JPEG,png,PNG,gif,GIF}'))
+     return gulp.src(conf.paths.src+'/app/**/assets/**/*.{jpg,JPG,JPEG,png,PNG,gif,GIF}')
         .pipe(flatten())
-        .pipe(gulp.dest(path.join(conf.paths.dist, '/assets/images') ));
+        .pipe(gulp.dest(conf.paths.dist+'/assets/images'));
 }
 // Merge all fonts of component assets folder inside the dist assets fonts folder.
 function component_assets_fonts(){
-     return gulp.src(path.join(conf.paths.src, '/app/**/assets/**/*.{ttf,woff,eof,svg}'))
+     return gulp.src(conf.paths.src+'/app/**/assets/**/*.{ttf,woff,eof,svg}')
         .pipe(flatten())
-        .pipe(gulp.dest(path.join(conf.paths.dist, '/assets/fonts') ));
+        .pipe(gulp.dest(conf.paths.dist+'/assets/fonts'));
 }
 // This task is used to replace the url of a component css which has a assets folder inside the component folder.
 function modify_css_url(){
-    return gulp.src(path.join(conf.paths.dist, '/assets/css/*.css'))
+    return gulp.src(conf.paths.dist+'/assets/css/*.css')
         .pipe(urlAdjuster({
             replace:  ['assets/','../../assets/']
         }))
-        .pipe(gulp.dest(path.join(conf.paths.dist, '/assets/css/')));
+        .pipe(gulp.dest(conf.paths.dist+'/assets/css/'));
 }

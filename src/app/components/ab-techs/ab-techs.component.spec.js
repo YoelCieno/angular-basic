@@ -7,9 +7,10 @@
     var techs;
     var item;
     var bindings;
+    var newScope;
 
     beforeEach(module('app'));
-    beforeEach(inject(function(_$componentController_ , _techs_) {
+    beforeEach(inject(function(_$componentController_ , _techs_, $rootScope) {
         $componentController = _$componentController_;
         //Getting data from the service
         techs = _techs_; 
@@ -17,11 +18,13 @@
         item = itemList[0];
         //Defining the binding for the component data
         bindings = {item: item};
+        //New scope
+        newScope = $rootScope.$new();
     }));
 
         it('should have data from the service ', function() {
             // Here we are passing actual bindings to the component
-            var vm = $componentController('abTechs', null, bindings);
+            var vm = $componentController('abTechs', {$scope: newScope}, bindings);
             //Check if the binding is working
             expect(vm.item.url).toBe(item.url);
         });

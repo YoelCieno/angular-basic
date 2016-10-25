@@ -20,16 +20,7 @@ function ngdocs(){
       'bower_components/angular-animate/angular-animate.min.js.map'
     ]
   }
-  return gulp.src(path.join(conf.paths.src, '/**/*.js'), path.join('!', conf.paths.src, '/**/*.spec.js'))
+  return gulp.src(conf.paths.src+'/**/*.js', '!'+conf.paths.src+'/**/*.spec.js')
     .pipe(gulpDocs.process(options))
     .pipe(gulp.dest('docs/api/'));
 }
-/*
-function run_ngdocs(){
-
-  connect.server({
-    root: ['docs/api'],
-    port: 3000
-  });
-}
-*/

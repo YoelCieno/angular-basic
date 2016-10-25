@@ -23,7 +23,7 @@ gulp.task('browsersync:e2e-dist', browserSyncE2eDist)
 
 function injectComponentsPaths() {
   // Get all assests folders of our components
-  return gulp.src(conf.path.src('/app/**/assets/'))
+  return gulp.src(conf.paths.src+'/app/**/assets/')
     .pipe(vinylPaths(function (path) {
 
       var index = path.lastIndexOf("app");
@@ -32,7 +32,7 @@ function injectComponentsPaths() {
       var relativePath = relativePath.replace(/\\/g,'/');
       
       // Append our component path to browsersync config
-      dynamicBrowserSyncConf.server.baseDir.push(conf.path.src()+'/'+relativePath);
+      dynamicBrowserSyncConf.server.baseDir.push(conf.paths.src+'/'+relativePath);
 
       return Promise.resolve();
     }));

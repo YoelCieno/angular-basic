@@ -17,39 +17,45 @@ const conf = require('../conf/gulp.conf');
 gulp.task('build', build);
 
 function build() {
-  const partialsInjectFile = gulp.src(conf.path.tmp('templateCacheHtml.js'), {read: false});
+  const partialsInjectFile = gulp.src(conf.paths.tmp+'/templateCacheHtml.js', {read: false});
   const partialsInjectOptions = {
     starttag: '<!-- inject:partials -->',
     ignorePath: conf.paths.tmp,
     addRootSlash: false
   };
 
-  const htmlFilter = filter(conf.path.tmp('*.html'), {restore: true});
-  const jsFilter = filter(conf.path.tmp('**/*.js'), {restore: true});
-  const cssFilter = filter(conf.path.tmp('**/*.css'), {restore: true});
+  const htmlFilter = filter(conf.paths.tmp+'/*.html', {restore: true});
+  const jsFilter = filter(conf.paths.tmp+'/**/*.js', {restore: true});
+  const cssFilter = filter(conf.paths.tmp+'/**/*.css', {restore: true});
 
   var env = !argv.dev;   // Build to Production or Development stage  
 
 
-  return gulp.src(conf.path.tmp('/index.html'))
+  var stream = gulp.src(conf.paths.tmp+'/index.html')
     .pipe(inject(partialsInjectFile, partialsInjectOptions))
     .pipe(useref())
     .pipe(jsFilter)
     .pipe(sourcemaps.init())
     .pipe(ngAnnotate())
     .pipe(gulpif(env,uglify({preserveComments: uglifySaveLicense}))).on('error', conf.errorHandler('Uglify'))
-    .pipe(rev())
-    .pipe(sourcemaps.write('maps'))
-    .pipe(jsFilter.restore)
+    .pipe(rev());
+
+    stream.pipe(sourcemaps.write('maps'));
+
+    stream = stream.pipe(jsFilter.restore)
     .pipe(cssFilter)
     .pipe(sourcemaps.init())
     .pipe(cssnano())
-    .pipe(rev())
-    .pipe(sourcemaps.write('maps'))
-    .pipe(cssFilter.restore)
+    .pipe(rev());
+
+    stream.pipe(sourcemaps.write('maps'));
+
+    stream.pipe(cssFilter.restore)
     .pipe(revReplace())
     .pipe(htmlFilter)
     .pipe(htmlmin())
     .pipe(htmlFilter.restore)
-    .pipe(gulp.dest(conf.path.dist()));
+    .pipe(gulp.dest(conf.paths.dist+'/'));
+
+    return stream;
 }

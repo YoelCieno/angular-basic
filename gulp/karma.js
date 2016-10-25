@@ -22,8 +22,8 @@ function runTests (singleRun,done) {
   var singleRun = true;
   var reporters = ['progress','junit'];
   var preprocessors = {};
-  var pathSrcHtml = [ path.join(conf.paths.src, '/**/*.html') ];
-  var pathSrcJs = [ path.join(conf.paths.src, '/**/!(*.spec).js') ];
+  var pathSrcHtml = [ conf.paths.src+'/**/*.html' ];
+  var pathSrcJs = [ conf.paths.src+'/**/!(*.spec).js' ];
 
   pathSrcHtml.forEach(function(path) {
     preprocessors[path] = ['ng-html2js'];

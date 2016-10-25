@@ -14,7 +14,7 @@ gulp.task('zip', zipApp);
 function zipApp(){
   return gulp.src(path.join(conf.paths.dist,'/**'))
         .pipe(zip('dist.zip'))
-        .pipe(gulp.dest(path.join('./'+conf.paths.dist)));
+        .pipe(gulp.dest('./'+conf.paths.dist));
 }
 
 function clean() {
@@ -25,9 +25,9 @@ function other() {
   const fileFilter = filter(file => file.stat.isFile());
 
   return gulp.src([
-    path.join(conf.paths.src, '/**/*'),
-    path.join(`!${conf.paths.src}`, '/**/*.{css,js,html}'),
-    path.join(`!${conf.paths.src}`, '/app/**/assets/**/*')
+    conf.paths.src+'/**/*',
+    `!${conf.paths.src}`+'/**/*.{css,js,html}',
+    `!${conf.paths.src}`+'/app/**/assets/**/*'
   ])
     .pipe(fileFilter)
     .pipe(gulp.dest(conf.paths.dist));
