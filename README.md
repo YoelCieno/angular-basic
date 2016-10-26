@@ -1,8 +1,8 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/FrontStack_AngularBasic_528px.png"/>
+<img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/Front-Stack-Angular-Big.png"/>
 </p>
 
-# Angular Basic v1.2.3
+# Angular Basic v1.2.4
 
 > Provides fast, reliable and extensible starter for the development of Angular 1.X projects.
 

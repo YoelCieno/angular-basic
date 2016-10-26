@@ -1,5 +1,10 @@
 # ChangeLog
-* [ 2016/10/7 ] Component assets support v1.2.3 **latest**
+* [ 2016/10/7 ] Angular Basic v1.2.4 **latest**
+    * Fix dependency versions
+    * Update new icon
+    * Minor Gulp task update
+    * Update Angular component test
+* [ 2016/10/7 ] Angular Basic v1.2.3 
     * Documentation update.
     * Application configuration in one file.
     * Karma no test warning update.
