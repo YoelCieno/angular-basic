@@ -1,5 +1,8 @@
 # ChangeLog
-* [ 2016/10/7 ] Angular Basic v1.2.4 **latest**
+* [ 2016/10/7 ] Angular Basic v1.2.5 **latest**
+    * Task migrated to npm scripts
+    * fixed issue #6
+* [ 2016/10/7 ] Angular Basic v1.2.4
     * Fix dependency versions
     * Update new icon
     * Minor Gulp task update

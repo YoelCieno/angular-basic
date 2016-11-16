@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/Front-Stack-Angular-Big.png"/>
 </p>
 
-# Angular Basic v1.2.4
+# Angular Basic v1.2.5
 
 > Provides fast, reliable and extensible starter for the development of Angular 1.X projects.
 
@@ -64,28 +64,28 @@ npm install & bower install
 ## Running
 Runs locally, no database required.
 
-`gulp serve` and the browser will open `http://localhost:3000`
+`npm run serve` and the browser will open `http://localhost:3000`
 It uses BrowserSync that provides live reload which refresh the application in the browser with any changes produced on the source.   
 
 ## Testing
 
 ### Unit testing
 
-`gulp test` or  `gulp test:auto` to launch the unit tests defined with Jasmine (testing framework) and Karma (test Runner).
+`npm run test` or  `npm run test:auto` to launch the unit tests defined with Jasmine (testing framework) and Karma (test Runner).
   
 ### E2E testing
 > Note: e2e testing needs to have jdk installed. 
 [download here](http://www.oracle.com/technetwork/java/javase/downloads)
 
-`gulp protractor`  to run the end to end tests with protractor framework, the web driver of Selenium integrated with Angular. 
+`npm run protractor`  to run the end to end tests with protractor framework, the web driver of Selenium integrated with Angular. 
 
-> If you are under a proxy, gulp protractor task needs update a webdriver manually
+> If you are under a proxy, npm run protractor task needs update a webdriver manually
 
 `webdriver-manager --proxy http://[IP_PROXY]:[PORT] update`
 
 ## Build
 
-`gulp` or `gulp build` compile and optimize the sources in /dist directory ready to be published in *Production*. Thus generates the api documentation inside the docs/api folder.  
+`npm run` or `npm run build` compile and optimize the sources in /dist directory ready to be published in *Production*. Thus generates the api documentation inside the docs/api folder.  
 
 ## Structure
 
@@ -181,12 +181,12 @@ At the same time, in this project is defined two different environments `Develop
 You can build or serve the application depending each environment you can add the flag --dev --pro defined app.config.js
 This takes the constanst key value defined in that file , example:
 ```javascript
-gulp serve --dev
-gulp serve --pro
-gulp serve:dist --dev
-gulp serve:dist --pro
-gulp build --dev
-gulp build --pro
+npm run serve --dev
+npm run serve --pro
+npm run serve:dist --dev
+npm run serve:dist --pro
+npm run build --dev
+npm run build --pro
 ```
 In `conf/app.config.json`, can be define the following parameters by environment: 
  * **environment_constants**: Parameters that be transform in an Angular module **src/app/app.environment.js** defining the list of constant available to Angular.
@@ -194,15 +194,15 @@ In `conf/app.config.json`, can be define the following parameters by environment
 
 ## Full list of Gulp tasks
 
-* `gulp` or `gulp build` to build an optimized version of your application in `/dist`
-* `gulp serve` to launch a browser sync server on your source 
-* `gulp serve:dist` to launch a server on your production-ready application 
-* `gulp serve:apidoc` to launch a browser sync server on your api documentation				
-* `gulp test` to launch your unit tests with Karma 										
-* `gulp test:auto` to launch your unit tests with Karma in watch mode 
-* `gulp protractor` to launch your e2e tests with protractor 							
-* `gulp protractor:dist` to launch your e2e tests with Protractor on the dist files   	
-* `gulp zip` to zip the built and optimized version of your application from `/dist` to a zip file in same folder
+* `npm run` or `npm run build` to build an optimized version of your application in `/dist`
+* `npm run serve` to launch a browser sync server on your source 
+* `npm run serve:dist` to launch a server on your production-ready application 
+* `npm run serve:apidoc` to launch a browser sync server on your api documentation				
+* `npm run test` to launch your unit tests with Karma 										
+* `npm run test:auto` to launch your unit tests with Karma in watch mode 
+* `npm run protractor` to launch your e2e tests with protractor 							
+* `npm run protractor:dist` to launch your e2e tests with Protractor on the dist files   	
+* `npm run zip` to zip the built and optimized version of your application from `/dist` to a zip file in same folder
 
 ### Features included in the gulpfile
 * *uglify* : optimize all your JavaScript

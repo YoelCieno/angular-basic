@@ -3,11 +3,20 @@
   "version": "0.0.0",
   "scripts": {
     "build": "gulp",
+    "build:dev": "gulp build --dev",
+    "build:pro": "gulp build --pro",
     "serve": "gulp serve",
+    "serve:dev": "gulp serve --dev",
+    "serve:pro": "gulp serve --pro",
     "serve:dist": "gulp serve:dist",
+    "serve:dist:dev": "gulp serve:dist --dev",
+    "serve:dist:pro": "gulp serve:dist --pro",
+    "serve:apidoc": "gulp serve:apidoc",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "bower": "bower"
+    "protractor": "gulp protractor",
+    "protractor:dist": "gulp protractor:dist",
+    "zip": "gulp zip"
   },
   "devDependencies": {
     "angular-mocks": "1.5.8",

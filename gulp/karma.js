@@ -18,8 +18,7 @@ function karmaFinishHandler(done) {
 }
 
 function runTests (singleRun,done) {
-
-  var singleRun = true;
+  
   var reporters = ['progress','junit'];
   var preprocessors = {};
   var pathSrcHtml = [ conf.paths.src+'/**/*.html' ];
