@@ -51,6 +51,14 @@
     "no-sequences": 2,
     "no-labels": 2,
     "max-depth": [2, { "max": 3 }],
-    "no-inline-comments": 1
+    "no-inline-comments": 1,
+    "no-use-before-define": [2, { "functions": true}],
+    "no-redeclare": 2,
+    "no-unused-variable": 2,
+    "one-var": [2, "always"],
+    "no-with": 2,
+    "no-multi-str": 2,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2
   }
 }
