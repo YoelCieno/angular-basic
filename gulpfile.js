@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const HubRegistry = require('gulp-hub');
 const browserSync = require('browser-sync');
-
+const csslint = require('gulp-csslint');
 const conf = require('./conf/gulp.conf');
 
 // Load some files into the registry
@@ -22,6 +22,16 @@ gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('serve:apidoc', gulp.series('build-apidocs', 'browsersync:apidoc'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
+
+
+ 
+gulp.task('css', function() {
+  gulp.src('src/assets/css/*.css')
+    .pipe(csslint())
+    .pipe(csslint.formatter());
+});
+
+
 
 function reloadBrowserSync(cb) {
   browserSync.reload();
