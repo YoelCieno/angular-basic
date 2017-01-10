@@ -24,7 +24,7 @@ gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 
 gulp.task('css', function() {
-  return gulp.src(['src/assets/css/*.css', '!src/assets/css/*min.css'])
+  return gulp.src(['src/assets/css/*.css', 'src/app/components/*/*.css', '!src/assets/css/*min.css'])
     .pipe(csslint())
     .pipe(csslint.formatter())
 });
