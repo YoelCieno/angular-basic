@@ -13,6 +13,7 @@
     "serve:dist:pro": "gulp serve:dist --pro",
     "serve:apidoc": "gulp serve:apidoc",
     "test": "gulp test",
+    "css_test": "gulp css",
     "test:auto": "gulp test:auto",
     "protractor": "gulp protractor",
     "protractor:dist": "gulp protractor:dist",

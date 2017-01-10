@@ -23,12 +23,10 @@ gulp.task('serve:apidoc', gulp.series('build-apidocs', 'browsersync:apidoc'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 
-
- 
 gulp.task('css', function() {
-  gulp.src('src/assets/css/*.css')
+  return gulp.src('src/assets/css/*.css')
     .pipe(csslint())
-    .pipe(csslint.formatter());
+    .pipe(csslint.formatter())
 });
 
 
