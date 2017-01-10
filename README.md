@@ -72,6 +72,14 @@ It uses BrowserSync that provides live reload which refresh the application in t
 ### Unit testing
 
 `npm run test` or  `npm run test:auto` to launch the unit tests defined with Jasmine (testing framework) and Karma (test Runner).
+
+### Javascript code linting
+
+`npm run test` or `npm run test:auto` to launch the rule-lint tests defined with Eslint.
+
+### CSS code linting
+
+`npm run css_test` to launch the rule-lint tests defined with CSSlint.
   
 ### E2E testing
 > Note: e2e testing needs to have jdk installed. 
