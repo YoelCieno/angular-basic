@@ -164,6 +164,7 @@ The root directory of the application:
 ├──  .editorconfig
 ├──  .gitignore
 ├──  .eslintrc
+├──  .csslintrc
 ├──  bower.json
 ├──  gulpfile.js
 ├──  karma.conf.js
