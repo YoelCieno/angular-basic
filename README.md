@@ -198,7 +198,8 @@ In `conf/app.config.json`, can be define the following parameters by environment
 * `npm run serve` to launch a browser sync server on your source 
 * `npm run serve:dist` to launch a server on your production-ready application 
 * `npm run serve:apidoc` to launch a browser sync server on your api documentation				
-* `npm run test` to launch your unit tests with Karma 										
+* `npm run test` to launch your unit tests with Karma 		
+* `npm run css_test` to launch your css tests with CssLint 									
 * `npm run test:auto` to launch your unit tests with Karma in watch mode 
 * `npm run protractor` to launch your e2e tests with protractor 							
 * `npm run protractor:dist` to launch your e2e tests with Protractor on the dist files   	
@@ -211,6 +212,7 @@ In `conf/app.config.json`, can be define the following parameters by environment
 * *rev* : add a hash in the file names to prevent browser cache problems
 * *watch* : watch your source files and recompile them automatically
 * *eslint* : The pluggable linting utility for JavaScript
+* *csslint* : The pluggable linting utility for CSS
 * *Unit test (karma)* : out of the box unit test configuration with karma
 * *e2e test (protractor)* : out of the box e2e test configuration with protractor
 * *browser sync* : full-featured development web server with livereload and devices sync
