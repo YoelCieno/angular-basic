@@ -4,8 +4,8 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
+  src: url(../fonts/MaterialIcons-Regular.eot?#iefix) format('embedded-opentype'),/* For IE6-8 */
+       local('Material Icons'),
        local('MaterialIcons-Regular'),
        url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
        url(../fonts/MaterialIcons-Regular.woff) format('woff'),
@@ -13,66 +13,68 @@
 }
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+  src: url(../fonts/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/OpenSans-Regular.ttf) format('truetype'),
+       url(../fonts/OpenSans-Regular.woff) format('woff'),
+       url(../fonts/OpenSans-Regular.woff2) format('woff2');
 }
 @font-face {
   font-family: 'OpenSans-Bold';
-  src: url(../fonts/OpenSans-Bold.ttf) format('truetype');
+  src: url(../fonts/OpenSans-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/OpenSans-Bold.ttf) format('truetype'),
+       url(../fonts/OpenSans-Bold.woff) format('woff'),
+       url(../fonts/OpenSans-Bold.woff2) format('woff2');
 }
 @font-face {
   font-family: 'OpenSans-Light';
-  src: url(../fonts/OpenSans-Light.ttf) format('truetype');
+  src: url(../fonts/OpenSans-Light.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/OpenSans-Light.ttf) format('truetype'),
+       url(../fonts/OpenSans-Light.woff) format('woff'),
+       url(../fonts/OpenSans-Light.woff2) format('woff2');
 }
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-}
+
 html {
   font-family: 'Roboto Slab', serif;
 }
 
 [layout=row] {
-  flex-direction: row;
   background-color: rgb(7, 12, 16) !important;
+  flex-direction: row;
 }
+
 md-toolbar.md-default-theme {
   background-color: black;
 }
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
   display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
+  font-family: 'Material Icons';
+  /* Support for IE. */
+  font-feature-settings: "smcp" on;
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;  /* Preferred icon size */
+  font-style: normal;
+  font-weight: normal;
+  height: 1em;
+  letter-spacing: normal;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  width: 1em;
+  word-wrap: normal;
 }
 .material-icons.grey { 
-  color: #dedfe0 !important;
   background-color: transparent !important;
+  color: #dedfe0 !important;
   margin-top: 20px;
 }
 
 .browsehappy {
-  margin: 0.2em 0;
   background: #ccc;
   color: #000;
+  margin: 0.2em 0;
   padding: 0.2em 0;
 }
 

@@ -1,6 +1,5 @@
-#toolbar,
-#toolbar>*{
-  background-color:  #4d265c !important;  
+.toolbar{
+  background-color: #4d265c;  
   color: white;
 }
 .toolbar-brand{
@@ -14,7 +13,7 @@
   margin-right: 20px;
 }
 
-#toolbar .md-button:hover{
-  background-color: white !important;
-  color: #4d265c !important;
+.ng-scope .md-button.md-ink-ripple:hover{
+  background-color: white;
+  color: #4d265c;
 }
