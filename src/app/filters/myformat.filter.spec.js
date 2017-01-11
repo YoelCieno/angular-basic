@@ -1,5 +1,5 @@
+'use strict';
 describe('Test myFormat filter', function () {
-  'use strict'; 
 
   var $filter;
 

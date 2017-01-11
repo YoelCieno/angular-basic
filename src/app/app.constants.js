@@ -1,6 +1,6 @@
 /* global moment:false */
+'use strict';
 (function() {
-  'use strict';
 
   angular
     .module('app')

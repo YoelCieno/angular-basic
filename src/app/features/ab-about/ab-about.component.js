@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
   /**
      * @ngdoc component
      * @name app.component:abAbout
@@ -16,18 +16,21 @@
     });
 
     /** @ngInject */
-    function AboutController(navbarPaths, guideItems, toastr, creation) {
-      var vm = this;
-      vm.pageData = {
-        section: 'about',
-        sectionText: 'About Section',
-        creationDate: creation.getDate(),
-        contentType: 'guide-item',
-        contentData: guideItems.getItems(),
-        logoURL: 'assets/images/serenity/serenity.png',
-        brand: 'Angular Basic',
-        paths: navbarPaths.getPaths()
-      };
-    }
-  
+  // function AboutController(navbarPaths, guideItems, toastr, creation) {
+    //Se elimina el atributo toastr para no dar error en dos reglas de eslint
+    //max-params y no-unused-vars
+  function AboutController(navbarPaths, guideItems, creation) {
+    var vm = this;
+    vm.pageData = {
+      section: 'about',
+      sectionText: 'About Section',
+      creationDate: creation.getDate(),
+      contentType: 'guide-item',
+      contentData: guideItems.getItems(),
+      logoURL: 'assets/images/serenity/serenity.png',
+      brand: 'Angular Basic',
+      paths: navbarPaths.getPaths()
+    };
+  }
+
 })();

@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
   /**
      * @ngdoc component
      * @name app.component:abHome
@@ -16,18 +16,21 @@
     });
 
     /** @ngInject */
-    function HomeController(navbarPaths, techs, toastr, creation) {
-      var vm = this;
-      vm.pageData = {
-        section: 'home',
-        sectionText: 'Frontend Revolution based on opensource',
-        creationDate: creation.getDate(),
-        contentType: 'techs',
-        contentData: techs.getTechs(),
-        logoURL: 'assets/images/Front-Stack-Angular-Big.png',
-        brand: 'Angular Basic',
-        paths: navbarPaths.getPaths()
-      };
-    }
+  // function HomeController(navbarPaths, techs, toastr, creation) {
+    //Se elimina el atributo toastr para no dar error en dos reglas de eslint
+    //max-params y no-unused-vars
+  function HomeController(navbarPaths, techs, creation) {
+    var vm = this;
+    vm.pageData = {
+      section: 'home',
+      sectionText: 'Frontend Revolution based on opensource',
+      creationDate: creation.getDate(),
+      contentType: 'techs',
+      contentData: techs.getTechs(),
+      logoURL: 'assets/images/Front-Stack-Angular-Big.png',
+      brand: 'Angular Basic',
+      paths: navbarPaths.getPaths()
+    };
+  }
 
 })();

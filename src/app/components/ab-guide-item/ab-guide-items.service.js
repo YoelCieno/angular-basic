@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
   /**
      * @ngdoc service
      * @name app.service:guideItems

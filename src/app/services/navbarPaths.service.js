@@ -1,5 +1,5 @@
-(function() {
 'use strict';
+(function() {
      /**
      * @ngdoc service
      * @name app.service:navbarPaths
@@ -7,18 +7,18 @@
      * @description
      * Service for the navbar paths of our application
      */
-    angular
+  angular
         .module('app')
         .factory('navbarPaths', Service);
 
     /** @ngInject */
-    function Service() {
+  function Service() {
 
-        var service = {
-            getPaths:getPaths
-        };
-        
-        return service;
+    var service = {
+      getPaths:getPaths
+    };
+
+    return service;
 
         /**
        * @ngdoc function
@@ -28,19 +28,19 @@
        * Get the paths of the app navbar
        * @returns {Object} navbar paths
        */
-        function getPaths() {
-            var paths = [{
-                            url: '#home',
-                            name: 'Home',
-                            icon: 'home'
-                        },
-                        {
-                            url: '#about',
-                            name: 'About',
-                            icon: 'work'
-                        }];
+    function getPaths() {
+      var paths = [{
+        url: '#home',
+        name: 'Home',
+        icon: 'home'
+      },
+        {
+          url: '#about',
+          name: 'About',
+          icon: 'work'
+        }];
 
-            return paths;
-        }
+      return paths;
     }
+  }
 })();

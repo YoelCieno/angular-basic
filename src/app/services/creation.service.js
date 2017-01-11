@@ -1,5 +1,5 @@
-(function() {
 'use strict';
+(function() {
      /**
      * @ngdoc service
      * @name app.service:creation
@@ -7,18 +7,18 @@
      * @description
      * Service for the creation of our application
      */
-    angular
+  angular
         .module('app')
         .factory('creation', Service);
 
     /** @ngInject */
-    function Service() {
+  function Service() {
 
-        var service = {
-            getDate:getDate
-        };
-        
-        return service;
+    var service = {
+      getDate:getDate
+    };
+
+    return service;
 
         /**
        * @ngdoc function
@@ -28,8 +28,8 @@
        * Get the date of the creation of our app
        * @returns {Number} timestamp
        */
-        function getDate() {
-            return 1463439028273;
-        }
+    function getDate() {
+      return 1463439028273;
     }
+  }
 })();

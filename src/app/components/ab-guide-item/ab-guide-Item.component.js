@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
   /**
      * @ngdoc component
      * @name app.component:abGuideItem
@@ -16,15 +16,15 @@
       controller: GuideItemController,
       controllerAs: 'vm',
       bindings:{
-          item : '<'
+        item : '<'
       }
     });
 
     /** @ngInject */
-    function GuideItemController() {
-      var vm = this;
-      vm.setItemLike = setItemLike;
-      
+  function GuideItemController() {
+    var vm = this;
+    vm.setItemLike = setItemLike;
+
       /**
        * @ngdoc function
        * @name app.component#setItemLike
@@ -34,9 +34,9 @@
        *
        * @param {object}  item      A object with card data
        */
-      function setItemLike( item ){
-        item.like = item.like === true ? false : true;
-      }
+    function setItemLike( item ){
+      item.like = item.like === true ? false : true;
     }
-  
+  }
+
 })();

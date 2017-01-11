@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
 
   /**
      * @ngdoc component
@@ -25,17 +25,16 @@
         logoUrl: '<'
       }
     });
-    
+
     /** @ngInject */
-    function CoverImageController() {
-      var vm = this;
-      switch(vm.section){
-        case 'about':
-          vm.sectionH1 = "About";
-          break;
-        case 'home':
-          vm.sectionH1 = "Home";  
-      }
+  function CoverImageController() {
+    var vm = this;
+    if ( vm.section === 'about' ){
+      vm.sectionH1 = "About";
     }
-  
+    if ( vm.section === 'home' ){
+      vm.sectionH1 = "Home";
+    }
+  }
+
 })();

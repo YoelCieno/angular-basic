@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
 
   describe('service guideItems', function() {
     var guideItems;

@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
 
   describe('service creation', function() {
     var creation;

@@ -1,12 +1,12 @@
+'use strict';
 (function() {
-  'use strict';
 
   angular
-    .module('app', 
-      [ 
-        'ui.router',
-        'ngMaterial', 
-        'toastr'
-      ]
-    )
+    .module('app',
+    [
+      'ui.router',
+      'ngMaterial',
+      'toastr'
+    ]
+    );
 })();

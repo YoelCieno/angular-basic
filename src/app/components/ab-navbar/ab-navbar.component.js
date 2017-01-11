@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
   /**
      * @ngdoc component
      * @name app.component:abNavbar
@@ -16,17 +16,16 @@
       controller: NavbarController,
       controllerAs: 'vm',
       bindings: {
-          creationDate: '<',
-          brand: '<',
-          paths: '<'
+        creationDate: '<',
+        brand: '<',
+        paths: '<'
       }
     });
 
     /** @ngInject */
-    function NavbarController(moment) {
-      var vm = this;
-      vm.relativeDate = moment(vm.creationDate).fromNow();
-    }
-  
+  function NavbarController(moment) {
+    var vm = this;
+    vm.relativeDate = moment(vm.creationDate).fromNow();
+  }
 
 })();

@@ -1,15 +1,14 @@
+'use strict';
 (function() {
-  'use strict';
 
   describe('about component', function() {
 
-    var $componentController;
-    var newScope;
-    
+    var $componentController, newScope;
+
     beforeEach(module('app'));
     beforeEach(inject(function(_$componentController_, $rootScope) {
-        $componentController = _$componentController_;
-        newScope = $rootScope.$new();
+      $componentController = _$componentController_;
+      newScope = $rootScope.$new();
     }));
 
     it('should have a specific sectionTest', function() {

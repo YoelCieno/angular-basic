@@ -1,12 +1,9 @@
+'use strict';
 (function() {
-  'use strict';
 
   describe('navbar component', function() {
 
-    var $componentController;
-    var timeInMs;
-    var bindings;
-    var newScope;
+    var $componentController, timeInMs, bindings, newScope;
 
     beforeEach(module('app'));
     beforeEach(inject(function(_$componentController_, $rootScope ) {

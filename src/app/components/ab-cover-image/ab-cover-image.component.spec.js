@@ -1,10 +1,9 @@
+'use strict';
 (function() {
-  'use strict';
 
   describe('abCoverImage component', function() {
 
-    var $componentController;
-    var newScope;
+    var $componentController, newScope;
 
     beforeEach(module('app'));
     beforeEach(inject(function(_$componentController_, $rootScope) {
@@ -21,7 +20,7 @@
       expect(vm.section).toEqual(jasmine.any(String));
       expect(vm.section).toEqual('about');
     });
-    
+
   });
 })();
 

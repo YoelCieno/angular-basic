@@ -1,5 +1,5 @@
+'use strict';
 (function() {
-  'use strict';
   /**
      * @ngdoc service
      * @name app.service:techs
@@ -68,7 +68,7 @@
         'logo': 'protractor.png',
         'url': 'http://www.protractortest.org/#/'
       }
-     
+
     ];
 
     this.getTechs = getTechs;
@@ -79,11 +79,11 @@
      * @methodOf  app.service:techs
      * @description
      * Get the techsdefined above
-     * @returns {object} techs 
+     * @returns {object} techs
      */
     function getTechs() {
       var rankCount = 0;
-        
+
       angular.forEach(data, function(awesomeThing) {
         awesomeThing.rank = rankCount;
         rankCount = rankCount++;
