@@ -51,7 +51,7 @@
     "no-labels": 2,
     "max-depth": [2, { "max": 3 }],
     "no-inline-comments": 1,
-    "no-use-before-define": [2, { "functions": true}],
+    "no-use-before-define": [2, { "functions": false, "classes": false }],
     "no-redeclare": 2,
     "one-var": [2, "always"],
     "no-with": 2,
