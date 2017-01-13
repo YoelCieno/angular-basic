@@ -37,23 +37,18 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 
-[layout=row] {
-  background-color: rgb(7, 12, 16) !important;
+.toolbar.lay_row {
+  background-color: rgb(7, 12, 16);
   flex-direction: row;
 }
 
-md-toolbar.md-default-theme {
+.md-default-theme {
   background-color: black;
 }
+
 .material-icons {
   display: inline-block;
   font-family: 'Material Icons';
-  /* Support for IE. */
-  font-feature-settings: "smcp" on;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
   font-size: 24px;  /* Preferred icon size */
   font-style: normal;
   font-weight: normal;
@@ -65,9 +60,10 @@ md-toolbar.md-default-theme {
   width: 1em;
   word-wrap: normal;
 }
-.material-icons.grey { 
-  background-color: transparent !important;
-  color: #dedfe0 !important;
+
+.material-icons.grey.md-ink-ripple { 
+  background-color: transparent;
+  color: #dedfe0;
   margin-top: 20px;
 }
 
