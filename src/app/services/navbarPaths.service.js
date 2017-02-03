@@ -20,25 +20,25 @@
 
     return service;
 
-        /**
-       * @ngdoc function
-       * @name app.service#getPaths
-       * @methodOf  app.service:navbarPaths
-       * @description
-       * Get the paths of the app navbar
-       * @returns {Object} navbar paths
-       */
+    /**
+     * @ngdoc function
+     * @name app.service#getPaths
+     * @methodOf  app.service:navbarPaths
+     * @description
+     * Get the paths of the app navbar
+     * @returns {Object} navbar paths
+     */
     function getPaths() {
       var paths = [{
-        url: '#home',
+        url: '#!/home',
         name: 'Home',
         icon: 'home'
       },
-        {
-          url: '#about',
-          name: 'About',
-          icon: 'work'
-        }];
+      {
+        url: '#!/about',
+        name: 'About',
+        icon: 'work'
+      }];
 
       return paths;
     }

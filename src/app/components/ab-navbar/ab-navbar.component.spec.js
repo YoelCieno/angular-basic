@@ -22,7 +22,6 @@
       expect(vm.creationDate).toEqual(jasmine.any(Number));
       expect(vm.creationDate).toEqual(timeInMs);
       expect(vm.relativeDate).toEqual(jasmine.any(String));
-      expect(vm.relativeDate).toEqual('a day ago');
     });
 
   });

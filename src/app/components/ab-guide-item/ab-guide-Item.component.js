@@ -25,15 +25,15 @@
     var vm = this;
     vm.setItemLike = setItemLike;
 
-      /**
-       * @ngdoc function
-       * @name app.component#setItemLike
-       * @methodOf  app.component:abGuideItem
-       * @description
-       * Set and unset an item like.
-       *
-       * @param {object}  item      A object with card data
-       */
+    /**
+     * @ngdoc function
+     * @name app.component#setItemLike
+     * @methodOf  app.component:abGuideItem
+     * @description
+     * Set and unset an item like.
+     *
+     * @param {object}  item      A object with card data
+     */
     function setItemLike( item ){
       item.like = item.like === true ? false : true;
     }

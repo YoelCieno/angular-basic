@@ -3,22 +3,27 @@
 
   describe('abCoverImage component', function() {
 
-    var $componentController, newScope;
+    var $componentController;
 
     beforeEach(module('app'));
-    beforeEach(inject(function(_$componentController_, $rootScope) {
+    beforeEach(inject(function(_$componentController_) {
       $componentController = _$componentController_;
-      newScope = $rootScope.$new();
     }));
 
     it('should have a date defined', function() {
       // Here we are passing actual bindings to the component
-      var vm = $componentController('abCoverImage', {$scope: newScope}, {section: 'home'});
-      expect(vm.section).toEqual(jasmine.any(String));
-      expect(vm.section).toEqual('home');
-      vm = $componentController('abCoverImage', {$scope: newScope}, {section: 'about'});
-      expect(vm.section).toEqual(jasmine.any(String));
-      expect(vm.section).toEqual('about');
+      var bindings = {section: 'home'};
+      var ctrl = $componentController('abCoverImage', null, bindings);
+      expect(ctrl.section).toEqual(jasmine.any(String));
+      expect(ctrl.section).toEqual('home');
+    });
+
+    it('should have a date defined', function() {
+      // Here we are passing actual bindings to the component
+      var bindings = {section: 'about'};
+      var ctrl = $componentController('abCoverImage', null, bindings);
+      expect(ctrl.section).toEqual(jasmine.any(String));
+      expect(ctrl.section).toEqual('about');
     });
 
   });
