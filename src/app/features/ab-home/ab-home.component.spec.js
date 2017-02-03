@@ -3,7 +3,8 @@
 
   describe('home component', function() {
 
-    var $componentController, newScope;
+    var $componentController;
+    var newScope;
 
     beforeEach(module('app'));
     beforeEach(inject(function(_$componentController_, $rootScope) {

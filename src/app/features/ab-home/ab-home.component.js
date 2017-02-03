@@ -21,6 +21,7 @@
     //max-params y no-unused-vars
   function HomeController(navbarPaths, techs, creation) {
     var vm = this;
+
     vm.pageData = {
       section: 'home',
       sectionText: 'Frontend Revolution based on opensource',
