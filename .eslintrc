@@ -53,7 +53,6 @@
     "no-inline-comments": 1,
     "no-use-before-define": [2, { "functions": false, "classes": false }],
     "no-redeclare": 2,
-    "one-var": [2, "always"],
     "no-with": 2,
     "no-multi-str": 2,
     "no-dupe-args": 2,

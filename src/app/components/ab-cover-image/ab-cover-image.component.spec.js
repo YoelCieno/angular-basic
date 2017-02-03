@@ -10,7 +10,7 @@
       $componentController = _$componentController_;
     }));
 
-    it('should have a date defined', function() {
+    it('should have a home section defined', function() {
       // Here we are passing actual bindings to the component
       var bindings = {section: 'home'};
       var ctrl = $componentController('abCoverImage', null, bindings);
@@ -18,7 +18,7 @@
       expect(ctrl.section).toEqual('home');
     });
 
-    it('should have a date defined', function() {
+    it('should have a about section defined', function() {
       // Here we are passing actual bindings to the component
       var bindings = {section: 'about'};
       var ctrl = $componentController('abCoverImage', null, bindings);
