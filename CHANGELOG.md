@@ -1,5 +1,8 @@
 # ChangeLog
-* [ 2016/10/7 ] Angular Basic v1.2.5 **latest**
+* [ 2017/2/8 ] Angular Basic v1.3 **latest**
+    * Updated AngularJS version to 1.6
+    * Added EsLint rules
+* [ 2016/10/7 ] Angular Basic v1.2.5
     * Task migrated to npm scripts
     * fixed issue #6
 * [ 2016/10/7 ] Angular Basic v1.2.4

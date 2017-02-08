@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/Front-Stack-Angular-Big.png"/>
 </p>
 
-# Angular Basic v1.2.5
+# Angular Basic v1.3
 
 > Provides fast, reliable and extensible starter for the development of Angular 1.X projects.
 
@@ -28,7 +28,7 @@ In case of having a corporative Proxy in the local network, the environment need
  * [In the next tutorial could be found the process to setup the environment](prerequisites.md#proxy-setup).
 
 ## Browser Compatibility 
-1. Angular 1.5.X 
+1. Angular 1.6.X 
     * IE9 or higher.
     * Safari
     * Chrome
