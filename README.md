@@ -112,59 +112,83 @@ The root directory of the application:
 │
 ├──  src/
 │   ├──  app/
-│   │	├──  components/
+│   │   ├──  components/
 │   │   │
-│   │   │   └──  coverImage/
+│   │   │   └──  ab-cover-coverimage/
+│   │   │       └──  assets/
+│   │   │           └──  images
+│   │   │               └──  ...
 │   │   │       ├──  coverImage.component.js
 │   │   │       ├──  coverImage.css
-│   │   │       ├──  coverImage.html
+│   │   │       └──  coverImage.html
 │   │   │
-│   │   │   └──  guideItem/
+│   │   │   └──  ab-guide-guideItem/
+│   │   │       └──  assets/
+│   │   │           └──  images
+│   │   │               └──  ...
 │   │   │       ├──  guideItem.component.js
 │   │   │       ├──  guideItem.css
 │   │   │       ├──  guideItem.html
 │   │   │       ├──  guideItem.spec.js
 │   │   │       ├──  guideItems.service.js
-│   │   │       ├──  guideItems.service.spec.js
+│   │   │       └──  guideItems.service.spec.js
 │   │   │
-│   │   │   └──  navbar/
+│   │   │   └──  ab-layout/
+│   │   │       ├──  layout.component.js
+│   │   │       └──  layout.html
+│   │   │
+│   │   │   └──  ab-navbar/
 │   │   │       ├──  navbar.component.js
 │   │   │       ├──  navbar.css
 │   │   │       ├──  navbar.html
-│   │   │       ├──  navbar.spec.js
+│   │   │       └──  navbar.spec.js
 │   │   │
-│   │   │   └──  serenityLine/
-│   │   │       ├──  serenityLine.component.js
-│   │   │       ├──  serenityLine.css
-│   │   │       ├──  serenityLine.html
-│   │   │       ├──  serenityLine.spec.js
-│   │   │       ├──  serenityLines.service.js
-│   │   │       ├──  serenityLines.service.spec.js
+│   │   │   └──  ab-techs/
+│   │   │       └──  assets/
+│   │   │           └──  images
+│   │   │               └──  ...
+│   │   │       ├──  techs.component.js
+│   │   │       ├──  techs.css
+│   │   │       ├──  techs.html
+│   │   │       ├──  techs.spec.js
+│   │   │       ├──  techs.service.js
+│   │   │       └──  techs.service.spec.js
 │   │   │
 │   │   ├──  features/
 │   │   │
-│   │   │   └──  about/
+│   │   │   └──  ab-about/
 │   │   │       ├──  about.component.js
 │   │   │       ├──  about.html
 │   │   │       ├──  about.route.js
-│   │   │       ├──  about.spec.js
+│   │   │       └──   about.spec.js
 │   │   │
-│   │   │   └──  home/
+│   │   │   └──  ab-home/
 │   │   │       ├──  home.component.js
 │   │   │       ├──  home.html
 │   │   │       ├──  home.route.js
-│   │   │       ├──  home.spec.js    
+│   │   │       └──  home.spec.js    
 │   │   │
-│   │   └──  app.config.js
-│   │   └──  app.constants.js
-│   │   └──  app.module.js
-│   │   └──  app.route.js
+│   │   ├──  filters/
+│   │   │   ├── myformat-filter.js/
+│   │   │   └── myformat-filter.spec.js/
+│   │   │
+│   │   ├──  services/
+│   │   │   ├── creation.service.js/
+│   │   │   ├── creation.service.spec.js/
+│   │   │   ├── navbarPaths.service.js/
+│   │   │   └── navbarPaths.service.spec.js/
+│   │   │
+│   │   ├──  app.config.js
+│   │   ├──  app.constants.js
+│   │   ├──  app.enviorement.js
+│   │   ├──  app.module.js
+│   │   ├──  app.route.js
 │   │   └──  app.run.js
-|   |
+│   │
 │   ├──  assets/
-│   │   ├──  images/
-│   │   └──  css/
-│   │       └──  index.css
+│   │   ├──  css/
+│   │   ├──  fonts/
+│   │   └──  images/
 │   ├──  favico.ico
 │   └──  index.html
 │
@@ -206,12 +230,12 @@ In `conf/app.config.json`, can be define the following parameters by environment
 * `npm run` or `npm run build` to build an optimized version of your application in `/dist`
 * `npm run serve` to launch a browser sync server on your source 
 * `npm run serve:dist` to launch a server on your production-ready application 
-* `npm run serve:apidoc` to launch a browser sync server on your api documentation				
-* `npm run test` to launch your unit tests with Karma 		
-* `npm run css_test` to launch your css tests with CssLint 									
+* `npm run serve:apidoc` to launch a browser sync server on your api documentation              
+* `npm run test` to launch your unit tests with Karma       
+* `npm run css_test` to launch your css tests with CssLint                                  
 * `npm run test:auto` to launch your unit tests with Karma in watch mode 
-* `npm run protractor` to launch your e2e tests with protractor 							
-* `npm run protractor:dist` to launch your e2e tests with Protractor on the dist files   	
+* `npm run protractor` to launch your e2e tests with protractor                             
+* `npm run protractor:dist` to launch your e2e tests with Protractor on the dist files      
 * `npm run zip` to zip the built and optimized version of your application from `/dist` to a zip file in same folder
 
 ### Features included in the gulpfile
